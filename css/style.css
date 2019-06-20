@@ -37,7 +37,7 @@ html, body{
 }
 .menu ul{
   position: absolute;
-  right: 510px;
+  right: 530px;
   height: 100px;
   width: 500px;
 
@@ -59,6 +59,7 @@ html, body{
 .top-block div{
   position: absolute;
   width: 39.42708333333333%;
+  height: 1100px;
 }
 .top-block img{
 
@@ -66,9 +67,33 @@ html, body{
 .meat{
 
 }
+
 .vegan{
   left: 395px;
+  
+  -webkit-trnsform: skew(-20deg);
+    
+}
+.vegan-img{
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  z-index: 3;
+}
+.vegan .before{
+
+}
+.vegan .after{
+  z-index: 33;
+  position: relative;
+  top: 0px;
+  left: 435px;
+}
+.vegan:hover img{
+  
+}
+.vegan hr{
 }
 .restaurant{
-  left: 1190px;
+  left: 1110px;
 }
