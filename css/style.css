@@ -2,6 +2,8 @@ html, body{
 	padding: 0;
 	margin: 0;
   font-family: 'Open Sans', sans-serif;
+  -webkit-user-select: none; 
+  -webkit-touch-callout: none;
 }
 .wrapper{
 	width: 1920px;
@@ -79,26 +81,25 @@ html, body{
   opacity: 0.8;
 }
 .restaurant{
-  left: 33.3%;
+  left: 33.33%;
   z-index: 33;
   opacity: 0.8;   
 }
 .message{
-  width: 375px;
-  height: 200px;
+  width: 58.41121495327103%;
+  height: 25%;
   position: absolute;
-  top: 400px;
+  top: 50%;
   margin-left: 20%;
   background-color: #dedcdb;
   text-align: center;
   opacity: 0.9;
   border-radius: 15px 30px 15px 30px;
-
 }
 .message button{
-  width: 140px;
+  width: 50%;
   height: 30px;
-  margin: 90px 120px ;
+  margin: 25%;
   background-color: #f1ac11;
   border: none;
   border-radius: 5px;
@@ -107,10 +108,10 @@ html, body{
 .top-block div{
   transition: all 0.5s ease;
 }
-.top-block .message:hover{
+ .top-block .message:hover{
   opacity: 1;
   transform: scale(1.2);
-  border: 3px solid #f1ac11;
+  border: 5px solid #f1ac11;
 }
 .top-block div:hover{
   transform: scale(0.97);
