@@ -11,11 +11,11 @@ html, body{
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 1100px;
+  height: 90%;
 }
 .menu{
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100%;
   height: 12.31481481481481%;
   z-index: 333;
@@ -31,91 +31,87 @@ html, body{
 .menu .buttons{
   position: absolute;
   right: 0px;
-  top: 70px;
+  top: 70px ;
   width: 81.77083333333333%;
-  height: 60px;
+  height: 80%;
 }
 .menu ul{
   position: absolute;
-  right: 45.45833333333333%;
-  height: 100px;
-  width: 500px;
+  right: 47.45833333333333%;
+  height: 100%;
+  width: 80%;
 
 }
-.menu li{
-  font-size: 15px;
-  color: #010100;
-  font-style: oblique;
-  font-weight: bolder; 
+.menu li{ 
   float: right;
   list-style: none;
   height: 30px;
-  margin: 0px 50px 0px 0px;
+  margin: 0px 2.66% 0px 0px;
 }
-.menu li:hover{
-  color: #f1ac11;
+.menu li a{
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  color: #010100;
+  font-style: oblique;
+  font-weight: bolder;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.menu a:hover{
   border-bottom: 3px solid #f1ac11;
+  color: #f1ac11;
 }
-.top-block div{
+.top-block .meat,.vegan,.restaurant{
   position: absolute;
-  width: 33.3%;
-  height: 1100px;
-  -webkit-transition: all 0.3s ease;;
-  -moz-transition: all 0.3s ease;;
-  -o-transition: all 0.3s ease;;
-  transition: all 0.3s ease;
+  width: 33.333333333333333333333%;
+  height: 100%;
 }
 .top-block img{
   width: 100%;
-  height: 800px;
-}
-.top-block div:hover{
-  
-  transform: scale(0.97);
+  height: 100%;
 }
 .meat{
   opacity: 0.7;
 }
-
+.vegan{
+  right: 0;
+  opacity: 0.8;
+}
 .restaurant{
   left: 33.3%;
   z-index: 33;
-  opacity: 0.8;
-    
+  opacity: 0.8;   
 }
-.vegan-img{
+.message{
+  width: 375px;
+  height: 200px;
   position: absolute;
-  top: 0px;
-  left: 5px;
-  z-index: 3;
-}
-.vegan .before{
+  top: 400px;
+  margin-left: 20%;
+  background-color: #dedcdb;
+  text-align: center;
+  opacity: 0.9;
+  border-radius: 15px 30px 15px 30px;
 
 }
-.vegan .after{
-  z-index: 33;
-  position: relative;
-  top: 0px;
-  left: 435px;
+.message button{
+  width: 140px;
+  height: 30px;
+  margin: 90px 120px ;
+  background-color: #f1ac11;
+  border: none;
+  border-radius: 5px;
 }
-.vegan:hover img{
-  
+/*Hover animation for header div*/
+.top-block div{
+  transition: all 0.5s ease;
 }
-.vegan hr{
-}
-.vegan{
-  right: 9px;
-  opacity: 0.8;
-}
-.vegan:hover{
+.top-block .message:hover{
   opacity: 1;
+  transform: scale(1.2);
+  border: 3px solid #f1ac11;
 }
-.restaurant:hover{
-  opacity: 1;
-}
-.meat:hover{
-   ;
-}
-.meat:hover .vegan{
-  opacity: 0.8;
+.top-block div:hover{
+  transform: scale(0.97);
 }
