@@ -4,6 +4,7 @@ html, body{
   font-family: 'Open Sans', sans-serif;
   -webkit-user-select: none; 
   -webkit-touch-callout: none;
+  
 }
 .wrapper{
 	width: 1920px;
@@ -55,7 +56,6 @@ html, body{
   height: 30px;
   font-size: 15px;
   color: #010100;
-  font-style: oblique;
   font-weight: bolder;
   text-decoration: none;
   padding-bottom: 15px;
@@ -101,18 +101,82 @@ html, body{
   height: 30px;
   margin: 25%;
   background-color: #f1ac11;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 10px;
 }
 /*Hover animation for header div*/
 .top-block div{
   transition: all 0.5s ease;
 }
  .top-block .message:hover{
-  opacity: 1;
+  opacity: 0.95;
   transform: scale(1.2);
   border: 5px solid #f1ac11;
 }
 .top-block div:hover{
   transform: scale(0.97);
+}
+.message button:hover{
+  background-color: #ffb715;
+}
+
+
+/*main-content*/
+.index-main{
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  height: 92.59259259259259%;
+}
+.index-main .daily-menu{
+  width: 46.875%;
+  height: 77.77777777777778%;
+  margin: 7.407407407407407% 26.5625%;
+  text-align: center;
+}
+.daily-menu h3{
+  font-size: 30px;
+  color: #f1ac11;
+}
+.daily-menu .items{
+  width: 100%;
+  height: 25%;
+  margin-bottom: 40px;
+  float: right;
+}
+.items-right, .items-left{
+  position: absolute;
+  width: 21.35416666666667%;
+  height: 38.0952380952381%;
+}
+.items-right img, .items-left img{
+  float: left;
+}
+.items-right{
+  position: absolute;
+  right: 26.5625%;
+}
+.daily-menu .items h6{
+  float: left;
+  margin: 20px 30px 10px;
+  font-size: 15px;
+}
+.daily-menu .items p{
+  margin-right: 1px;
+  font-size: 13px;
+  height: 30px;
+}
+.daily-menu .items .price{
+  position: relative;
+  left: 350px;
+  top: 15px;
+  width: 45px;
+  height: 27px;
+  background-color: #f1ac11;
+  border-radius: 5px 10px;
+  
+
 }
