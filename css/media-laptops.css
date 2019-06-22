@@ -1,0 +1,33 @@
+@media screen and (max-width: 1750px){
+    .index-header{
+	  height: 70%;
+    }
+    .menu ul{
+	  right: 45%;
+    }
+    .message button{
+    	margin-top: 15%;
+    	height: 25%;
+    }
+    .index-main{
+    	top: 70%;
+    }
+    .index-main .daily-menu{
+    	  width: 50%;
+    }
+    .items-right, .items-left{
+    	width: 25%;
+    }
+    .items-right img, .items-left img{
+    	margin-left: 0px;
+    }
+    .items-right{
+    	right: 20%;
+    }
+    .items-left{
+    	left: 20%;
+    }
+
+
+
+}	
