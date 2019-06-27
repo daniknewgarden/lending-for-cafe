@@ -1,0 +1,48 @@
+@media screen and (min-width: 640px) and (max-width: 1000px;){
+    .index-header{
+	  height: 50%;
+    }
+    .menu ul{
+	  right: 30%;
+    }
+    .menu li{
+       margin: 0px 5% 0px 0px; 
+    }
+    .message button{
+    	margin: 15% 5%;
+        width: 80%;
+    	height: 20%;
+    }
+    .index-main{
+    	top: 50%;
+    }
+    .index-main .daily-menu{
+    	  width: 80%;
+    }
+    .items-right, .items-left{
+    	width: 35%;
+    }
+    .items-right img, .items-left img{
+    	margin-left: 0px;
+    }
+    .items-right{
+    	right: 10%;
+    }
+    .items-left{
+    	left: 10%;
+    }
+    .daily-menu .items h3{
+        margin-left: 20%;
+    }
+    .daily-menu .items p{
+    	left: 20%;
+    }
+    .daily-menu .items .price{
+        bottom: 5%;
+        top: 15%;
+
+    }
+
+
+
+}	
