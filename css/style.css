@@ -55,7 +55,7 @@ html, body{
   width: 100%;
   height: 30px;
   font-size: 15px;
-  color: #010100;
+  color: #ffffff;
   font-weight: bolder;
   text-decoration: none;
   padding-bottom: 15px;
@@ -244,11 +244,38 @@ html, body{
   background-image: url(../images/main-images/about/4031.png);
 }
 .about-us .find-us{
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+  cursor: pointer;
   padding: 30px;
   width: 25%;
   height: 50%;
   text-align: center;
   background-color: #ffffff;
+  border-radius: 5px 30px;
   margin: 3.5% auto;
-  border-radius: 35px;
+  
+}
+.about-us .find-us h3,p{
+  font-size: 15px;
+  color: #000000;
+}
+.about-us .find-us .button{
+  width: 120px;
+  height: 25px;
+  background-color: red;
+}
+.about-us .find-us:hover{
+  opacity: 1;
+}
+.index-footer{
+  position: absolute;
+  top: 246.95%;
+  width: 100%;
+  height: 275px;
+  background-image: url(../images/footer-images/866.png);
+
 }
