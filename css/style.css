@@ -6,6 +6,9 @@ html, body{
   -webkit-touch-callout: none;
 
 }
+div,span,button{
+      outline: none;
+}
 .wrapper{
 	width: 1920px;
 	margin: 0 auto;
@@ -202,25 +205,24 @@ html, body{
   top: 0%;
 }
 .swiper-slide {
-      text-align: center;
-      font-size: 180px;
-      background: #fff;
+  text-align: center;
+  font-size: 180px;
+  background: #fff;
       /* Center slide text vertically */
-    }
+}
 .swiper-button-next{
-      margin-right: 10%;
-          }
+ margin-right: 10%;
+}
 .swiper-button-prev{
-      margin-left: 10%;
-    }
-    .swiper-pagination{
-      color: #F1AC11;
-       position: absolute;
-       top: 120%;
-       left: 46.5%;
+  margin-left: 10%;
+}
+.swiper-pagination{
+  color: #F1AC11;
+  position: absolute;
+  top: 120%;
+  left: 46.5%;
 
     }
-    
 .slider{
   width: 100%;
   height: 100%;
@@ -271,6 +273,7 @@ html, body{
   width: 100%;
   height: 60%;
   background-image: url(../images/main-images/about/4031.png);
+  background-repeat: no-repeat;
 }
 .about-us .find-us{
   -webkit-transition: all 0.3s ease;;

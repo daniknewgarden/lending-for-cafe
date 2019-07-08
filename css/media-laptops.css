@@ -31,8 +31,27 @@
     	left: 15%;
     }
     .slider-wrapper{
-        top: 600px;
-        height: 20px;
+        width: 70%;
+        height: 40%;
+        right: 15%;
+    }
+    .swiper-button-next{
+      margin-right: 5%;
+      top: 30% !important;
+    }
+    .swiper-button-prev{
+      margin-left: 5%;
+      top: 30% !important;
+    }
+    .swiper-pagination{
+        top: 115%;
+    }
+    .about-us{
+        top: 200%;
+        height: 40%;
+    }
+    .index-footer{
+        top: 240%;
     }
 
 
