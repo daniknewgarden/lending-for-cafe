@@ -186,16 +186,45 @@ html, body{
 /*slider styles*/
 .slider-wrapper{
   position: absolute;
-  top: 620px;
+  top: 85%;
   right: 20%;
   width: 60%;
-  height: 50%;
+  height: 45%;
 }
+.swiper-container{
+  position: absolute;
+  right: 2%;
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper{
+  position: absolute;
+  top: 0%;
+}
+.swiper-slide {
+      text-align: center;
+      font-size: 180px;
+      background: #fff;
+      /* Center slide text vertically */
+    }
+.swiper-button-next{
+      margin-right: 10%;
+          }
+.swiper-button-prev{
+      margin-left: 10%;
+    }
+    .swiper-pagination{
+      color: #F1AC11;
+       position: absolute;
+       top: 120%;
+       left: 46.5%;
+
+    }
+    
 .slider{
   width: 100%;
   height: 100%;
-  margin: auto;
-  border-radius: 15px;
+  margin: 0 auto;
 }
 .slider .slider-logo{
   width: 50%;
@@ -238,9 +267,9 @@ html, body{
  /*about us*/
 .about-us{
   position: absolute;
-  top: 125%;
+  top: 210%;
   width: 100%;
-  height: 44.44444444444444%;
+  height: 60%;
   background-image: url(../images/main-images/about/4031.png);
 }
 .about-us .find-us{
@@ -270,12 +299,12 @@ html, body{
 }
 .about-us .find-us:hover{
   opacity: 1;
+  transform: scale(0.97);
 }
 .index-footer{
   position: absolute;
-  top: 246.95%;
+  top: 257%;
   width: 100%;
   height: 275px;
   background-image: url(../images/footer-images/866.png);
-
 }

@@ -12,10 +12,13 @@
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <!-- Fotorama -->
-    <link href="fotorama.css" rel="stylesheet">
-   <script src="fotorama.js"></script>
+    
+   <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
    <!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i&display=swap" rel="stylesheet">
+
+
+
 </head>
 <body>
     <div class="wrapper">
@@ -45,7 +48,7 @@
                         </div>
 					</div>
 					<div class="vegan">
-						<img  src="images/header-images/top-block/2 (1).jpg" class="vegan-img">
+						<img  src="images/header-images/top-block/yakynina-anastasia-tktUuZ2YBKk-unsplash.jpg" class="vegan-img">
 						<div class="vegan-message message">
 								<h3>Їжа для вегетеріанців</h3>
 						<button>
@@ -109,29 +112,10 @@
 				</div>	
 				</div>
 				<div class="slider-wrapper">
-                <div class="fotorama" data-width="100%" data-height="40%">
-				<div class="slider">
-					<div class="slider-logo">
-						<img src="images/main-images/slider/brooke-lark-4J059aGa5s4-unsplash.jpg" class="logo">
-					</div>
-					<div class="slider-text">
-						<p class="small-title">
-							Lorem ipsum
-						</p>
-						<h3>
-							Lorem ipsum dolor sit amet, consectetur
-						</h3>
-						<p class="text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem inventore dignissimos enim eveniet doloribus officia aliquid consequatur ipsum impedit rerum
-						</p>
-						<div class="slider-price">
-							<h5>
-								14$- ORDER
-							</h5>
-						</div>
-					</div>
-				</div>
-				<div class="slider">
+				<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<div class="slider">
 					<div class="slider-logo">
 						<img src="images/main-images/slider/brooke-lark-4J059aGa5s4-unsplash.jpg" class="logo">
 					</div>
@@ -152,7 +136,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="slider">
+			</div>
+      <div class="swiper-slide">
+      	<div class="slider">
 					<div class="slider-logo">
 						<img src="images/main-images/slider/brooke-lark-4J059aGa5s4-unsplash.jpg" class="logo">
 					</div>
@@ -168,12 +154,14 @@
 						</p>
 						<div class="slider-price">
 							<h5>
-								3$- ORDER
+								2$- ORDER
 							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="slider">
+			</div>
+			<div class="swiper-slide">
+      	<div class="slider">
 					<div class="slider-logo">
 						<img src="images/main-images/slider/brooke-lark-4J059aGa5s4-unsplash.jpg" class="logo">
 					</div>
@@ -189,12 +177,14 @@
 						</p>
 						<div class="slider-price">
 							<h5>
-								4$- ORDER
+								2$- ORDER
 							</h5>
 						</div>
 					</div>
 				</div>
-				<div class="slider">
+			</div>
+			<div class="swiper-slide">
+      	<div class="slider">
 					<div class="slider-logo">
 						<img src="images/main-images/slider/brooke-lark-4J059aGa5s4-unsplash.jpg" class="logo">
 					</div>
@@ -210,13 +200,46 @@
 						</p>
 						<div class="slider-price">
 							<h5>
-								5$- ORDER
+								2$- ORDER
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+      	<div class="slider">
+					<div class="slider-logo">
+						<img src="images/main-images/slider/brooke-lark-4J059aGa5s4-unsplash.jpg" class="logo">
+					</div>
+					<div class="slider-text">
+						<p class="small-title">
+							Lorem ipsum
+						</p>
+						<h3>
+							Lorem ipsum dolor sit amet, consectetur
+						</h3>
+						<p class="text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem inventore dignissimos enim eveniet doloribus officia aliquid consequatur ipsum impedit rerum
+						</p>
+						<div class="slider-price">
+							<h5>
+								2$- ORDER
 							</h5>
 						</div>
 					</div>
 				</div>
 			</div>
 			</div>
+    </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"><img src="images/main-images/slider/next.png"></div>
+    <div class="swiper-button-prev"><img src="images/main-images/slider/prev.png"></div>
+  </div>
+      </div>
+  </div>
 			<div class="about-us">
 					<div class="find-us" id="contact">
 					<h3>
@@ -229,12 +252,39 @@
 			        <img src="images/main-images/about/icons8-google-maps-96.png">
 			        </a>	
 					</div>
-				</div>	
+			</div>	
 		</main>
 		<footer class="index-footer">
+
 		</footer>
     </div>
+
+    <!-- Swiper JS -->
+
+    <script src="scripts/swiper.min.js"></script>
+
  <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
-<script type="text/javascript" src="scripts/script.js" ></script>   
+<script type="text/javascript" src="scripts/script.js" ></script> 
+
+<!-- Initialize Swiper -->
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>  
 </body>
 </html>
