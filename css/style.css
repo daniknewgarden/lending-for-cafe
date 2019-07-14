@@ -305,6 +305,7 @@ div,span,button{
   transform: scale(0.97);
 }
 .index-footer{
+  display: none;
   position: absolute;
   top: 257%;
   width: 100%;
