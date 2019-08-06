@@ -143,49 +143,8 @@ div,span,button{
   font-size: 30px;
   color: #f1ac11;
 }
-.daily-menu .items{
-  width: 100%;
-  height: 25%;
-  margin-bottom: 4%;
-  float: right;
-}
-.items-right, .items-left{
-  position: absolute;
-  width: 21.35416666666667%;
-  height: 38.0952380952381%;
-}
-.items-right img, .items-left img{
-  float: left;
-  margin-left: 3%;
-}
-.items-right{
-  position: absolute;
-  right: 26.5625%;
-}
-.daily-menu .items h6{
-  float: left;
-  margin: 5.62% 0% 2.81%;
-  font-size: 15px;
-  width: 60%;
-  height: 45%;
-}
-.daily-menu .items p{
-  position: relative;
-  left: 7%;
-  bottom: 25%;
-  font-size: 13px;
-  width: 70%;
-  height: 45%;
-}
-.daily-menu .items .price{
-  position: relative;
-  left: 90%;
-  top: 20%;
-  width: 10%;
-  height: 25%;
-  background-color: #f1ac11;
-  border-radius: 5px 10px;
-}
+
+
 /*slider styles*/
 .slider-wrapper{
   position: absolute;
@@ -311,4 +270,164 @@ div,span,button{
   width: 100%;
   height: 275px;
   background-image: url(../images/footer-images/866.png);
+}
+
+
+
+
+
+/**/
+@charset "UTF-8";
+/*!
+ *
+ * bttn.css - https://ganapativs.github.io/bttn.css
+ * Version - 0.2.4
+ * Demo: https://bttn.surge.sh
+ *
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Ganapati V S (@ganapativs)
+ *
+ */
+/* standalone - .bttn-pill */
+@charset "UTF-8";
+/*!
+ *
+ * bttn.css - https://ganapativs.github.io/bttn.css
+ * Version - 0.2.4
+ * Demo: https://bttn.surge.sh
+ *
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Ganapati V S (@ganapativs)
+ *
+ */
+/* standalone - .bttn-material-flat */
+.bttn-default {
+  color: #fff;
+}
+.bttn-primary,
+.bttn,
+.bttn-lg,
+.bttn-md,
+.bttn-sm,
+.bttn-xs {
+  color: #1d89ff;
+}
+.bttn-warning {
+  color: #F1AC11;
+}
+.bttn-danger {
+  color: #ff5964;
+}
+.bttn-success {
+  color: #28b78d;
+}
+.bttn-royal {
+  color: #bd2df5;
+}
+.bttn,
+.bttn-lg,
+.bttn-md,
+.bttn-sm,
+.bttn-xs {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+.bttn-lg {
+  padding: 8px 15px;
+  font-size: 24px;
+  font-family: inherit;
+}
+.bttn-md {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+}
+.bttn-sm {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.bttn-xs {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-family: inherit;
+}
+.bttn-material-flat {
+  margin: 2%;
+  padding: 0;
+  border-width: 0;
+  border-color: transparent;
+  background: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+  overflow: hidden;
+  border-width: 0;
+  border-radius: 2px;
+  background: #F1AC11;
+  color: #1d89ff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.bttn-material-flat:hover,
+.bttn-material-flat:focus {
+  background-color: #FEAB3A;
+}
+.bttn-material-flat.bttn-xs {
+  padding: 3px 8px;
+  font-size: 12px;
+  font-family: inherit;
+}
+.bttn-material-flat.bttn-sm {
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: inherit;
+}
+.bttn-material-flat.bttn-md {
+  font-size: 20px;
+  font-family: inherit;
+  padding: 5px 12px;
+}
+.bttn-material-flat.bttn-lg {
+  padding: 8px 15px;
+  font-size: 24px;
+  font-family: inherit;
+}
+.bttn-material-flat.bttn-default {
+  background: #fff;
+  color: #1d89ff;
+}
+.bttn-material-flat.bttn-primary {
+  background: #1d89ff;
+  color: #fff;
+}
+.bttn-material-flat.bttn-warning {
+  background: #feab3a;
+  color: #fff;
+}
+.bttn-material-flat.bttn-danger {
+  background: #ff5964;
+  color: #fff;
+}
+.bttn-material-flat.bttn-success {
+  background: #28b78d;
+  color: #fff;
+}
+.bttn-material-flat.bttn-royal {
+  background: #bd2df5;
+  color: #fff;
 }
