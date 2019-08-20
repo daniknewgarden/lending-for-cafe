@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Roboto', sans-serif;
 
 }
-div,span,button{
+div,span,button,input{
       outline: none;.
 }
 .wrapper{
@@ -163,15 +163,15 @@ div,span,button{
   margin: 0px 25px 15px 0px;
   border-radius: 5px;
   color: #000;
-  box-shadow: 0.5px 1px 10px 2px rgb(249, 207, 108);
+
 }
 .daily-menu .buttons button:hover{
   background-color: #F1AC11;
-  box-shadow: 0.5px 1px 10px 2px rgb(241, 173, 14);
+  
 }
 .daily-menu .buttons .active{
   background-color: #F1AC11;
-  box-shadow: 0.5px 1px 10px 2px rgb(241, 173, 14);
+  
   transform: translateX(0);
 }
 .daily-menu .menu{
@@ -335,34 +335,94 @@ div,span,button{
   background-image: url(../images/main-images/about/4031.png);
   background-repeat: no-repeat;
 }
-.about-us .find-us{
-  -webkit-transition: all 0.3s ease;;
-  -moz-transition: all 0.3s ease;;
-  -o-transition: all 0.3s ease;;
-  transition: all 0.3s ease;
-  opacity: 0.6;
-  cursor: pointer;
-  padding: 30px;
-  width: 25%;
+.about-us .find-us, .contact-us{
+  border: 5px solid #F1AC11;
+  width: 20%;
   height: 50%;
+  padding: 40px;
+}
+
+.about-us .find-us{ 
+  margin: 1.5% 10%;
+  background-color: #ffffff;
+  text-align: center;
+}
+.about-us .find-us h4{
+  font-size: 17px;
+}
+.about-us .find-us h5{
+  text-align: center;
+  line-height: 30px;
+
+}
+.about-us .find-us p{
+  position: relative;
+  bottom: 15%;
+  left: 7%;
+  width: 35%;
+  text-align: right;
+}
+.about-us .find-us button{
+  width: 35%;
+  height: 15%;
+  background-color: #F1AC11;
+  border: none;
+}
+.about-us button a{
+  text-decoration: none;
+  color: #2b2b2b;
+
+}
+.about-us .contact-us{
+  position: relative;
+  bottom: 70.5%;
+  margin: auto 65%;
   text-align: center;
   background-color: #ffffff;
-  border-radius: 5px 30px;
-  margin: 3.5% auto;
   
 }
-.about-us .find-us h3,p{
+.about-us .contact-us h3, h4{
   font-size: 15px;
   color: #000000;
 }
-.about-us .find-us .button{
+.about-us .contact-us h4{
+  width: 100%;
+}
+.about-us .contact-us form, .thanks{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.about-us .contact-us form input{
+  width: 80%;
+  height: 5%; 
+  margin: 3%;
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+  background-color: #eceff1;
+}
+.about-us .contact-us form button{
+  width: 50%;
+  height: 15%;
+  margin-top: 10%;
+  background-color: #F1AC11;
+  border: none;
+}
+.about-us .contact-us .button{
   width: 120px;
   height: 25px;
   background-color: red;
 }
-.about-us .find-us:hover{
+/*.about-us .find-us:hover{
   opacity: 1;
   transform: scale(0.97);
+}*/
+.hidden{
+  display: none;
+}
+.activee{
+  display: block;
 }
 .index-footer{
   display: none;
