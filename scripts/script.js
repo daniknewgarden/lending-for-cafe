@@ -5,6 +5,14 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 750);
     });
+
+
+$(document).on('click', '.daily-menu button:not(.active)', function(){
+	$(this).addClass('active').siblings().removeClass('active')
+	.closest('div.daily-menu').find('div.menu').removeClass('active').eq($(this).index()).addClass('active');
+})
+
+
     var swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
       centeredSlides: true,
