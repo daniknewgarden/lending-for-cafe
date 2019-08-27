@@ -3,14 +3,15 @@ $(document).ready(function(){
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 750);
+        $('body,html').animate({scrollTop: top}, 700);
     });
-    $(document).ready(function() {
+});
 
 
 
 
 	//E-mail Ajax Send
+
 	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
@@ -18,8 +19,8 @@ $(document).ready(function(){
 			url: "scripts/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			$('form').addClass('hidden')
-			$('.thanks').addClass('activee');
+			$('.priatki').addClass('hidden')
+			$('.thankss').removeClass('hidden');
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
@@ -28,7 +29,7 @@ $(document).ready(function(){
 		return false;
 	});
 
-});
+
 
 
 
@@ -64,6 +65,5 @@ $(document).on('click', '.daily-menu button:not(.active)', function(){
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-    });
-});
+    });	
 	

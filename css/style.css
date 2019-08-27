@@ -25,18 +25,12 @@ div,span,button,input{
 .menu{
   position: absolute;
   top: 0;
+  margin: 0 auto;
   width: 100%;
   height: 12.31481481481481%;
   z-index: 333;
 }
-.menu .logo{
-  z-index: 333;
-  width: 16.32291666666667%;
-  margin: 30px 0px 0px 70px;
-}
-.menu .logo img{
-  margin: 0px;
-}
+
 .menu .buttons{
   position: absolute;
   right: 0px;
@@ -92,11 +86,12 @@ div,span,button,input{
   opacity: 0.8;   
 }
 .message{
+  padding: 5%;
   width: 58.41121495327103%;
   height: 25%;
   position: absolute;
   top: 50%;
-  margin-left: 20%;
+  margin-left: 15%;
   background-color: #dedcdb;
   text-align: center;
   opacity: 0.9;
@@ -107,11 +102,15 @@ div,span,button,input{
   height: 15%;
   margin: 25%;
   background-color: #f1ac11;
+  border: none;
+  border-radius: 5px 10px;
+}
+.message button a{
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
-  border: none;
-  border-radius: 5px 10px;
+  text-decoration: none;
+  color: #2B2B2B; 
 }
 /*Hover animation for header div*/
 .top-block div{
@@ -200,14 +199,7 @@ div,span,button,input{
 .daily-menu .menu .menu-items{
    width: 100%;
    ;}
-.next{
-  transform: translateX(250%);
-  transition: all .5s;
-}
-.prev{
-  transform: translateX(-250%);
-  transition: all .5s;
-}
+
 
 
    
@@ -332,12 +324,18 @@ div,span,button,input{
   top: 220%;
   width: 100%;
   height: 60%;
-  background-image: url(../images/main-images/about/4031.png);
+  background-image: url(../images/main-images/about/4031.webp);
   background-repeat: no-repeat;
 }
 .about-us .find-us, .contact-us{
   border: 5px solid #F1AC11;
   width: 20%;
+  height: 50%;
+  padding: 40px;
+}
+.thanks{
+  border: 5px solid #F1AC11;
+  width: 2%;
   height: 50%;
   padding: 40px;
 }
@@ -381,6 +379,7 @@ div,span,button,input{
   background-color: #ffffff;
   
 }
+
 .about-us .contact-us h3, h4{
   font-size: 15px;
   color: #000000;
@@ -388,7 +387,7 @@ div,span,button,input{
 .about-us .contact-us h4{
   width: 100%;
 }
-.about-us .contact-us form, .thanks{
+.about-us .contact-us form{
   width: 100%;
   height: 100%;
   text-align: center;
@@ -414,16 +413,10 @@ div,span,button,input{
   height: 25px;
   background-color: red;
 }
-/*.about-us .find-us:hover{
-  opacity: 1;
-  transform: scale(0.97);
-}*/
 .hidden{
   display: none;
 }
-.activee{
-  display: block;
-}
+
 .index-footer{
   display: none;
   position: absolute;

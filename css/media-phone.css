@@ -1,0 +1,114 @@
+@media screen and (min-width: 360px) and (max-width: 750px){
+
+    html {
+    height: 100%;
+    }
+    body {
+    padding: 0;
+    margin: 0; 
+    min-width: 100%;
+    }
+    .index-header{
+        height: 150%;
+    }
+    .menu .buttons{
+        top: 50px;
+        width: 100%;           
+    }
+    .menu ul{
+        width: 90%;
+        right: 10%;    
+    }
+    .menu li{  
+        margin: 3%;
+    }
+    .top-block .meat,.vegan,.restaurant{
+        width: 100%;
+        height: 50%;
+        left: 0px;
+    }
+
+    .vegan{
+        top: 50%;
+    }
+    .meat{
+        top: 100%;
+    }
+    .message{
+        padding: 30px;
+        margin: -10% 12%;
+        
+        height: 35%;
+    }
+    .message button{
+        width: 70%;
+        height: 30%;
+        margin: 15%;
+    }
+    .index-main{
+        top: 220%;
+    }
+    .index-main .daily-menu{
+        margin: 20% 0px;
+        height: 130%;
+    }
+    .daily-menu .buttons{
+        width: 98%;
+        height: 15%;
+        margin: 20% 2%;
+    }
+    .daily-menu .buttons button{
+        width: 22%;
+    }
+    .daily-menu .menu{
+        display: none;
+        width: 90%;
+        height: 80%;
+        margin: 55% 5%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 96%);
+        grid-gap: 3%;
+    }
+    .daily-menu .menu .menu-items .price{
+        width: 10%;
+        border-radius: 10px;
+        bottom: 35%;
+        left: 96%;
+    }
+    .slider-wrapper{
+        width: 100%;
+        top: 90%;
+        left: 0%;
+    }
+    .swiper-container{
+       width: 100%;
+    }
+    .swiper-button-next,.swiper-button-prev{
+        display: none
+    }
+    .swiper-pagination{
+       color: #F1AC11;
+       position: absolute;
+       top: 280%;
+       left: 40%;
+
+    }
+    .about-us{
+     top: 500%;
+     height: 100%;
+     background-image: url(../images/main-images/about/2.webp)
+    }
+    .about-us .find-us, .contact-us{
+        padding: 2% 10%;
+        width: 70%;
+        height: 40%;;
+        margin: 3% 4%;
+    }
+    .about-us .contact-us{
+        bottom: 10%;
+        margin: 25% 4%; 
+    }
+    .about-us .find-us button{
+        width: 170px;
+    }
+
