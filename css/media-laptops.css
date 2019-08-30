@@ -1,58 +1,27 @@
-@media screen and (min-width: 1024px) and (max-width: 1750px){
+@media screen and (min-width: 1024px) and (max-width: 1400px){
     .index-header{
-	  height: 70%;
+      height: 70%;
+    } 
+    .menu .buttons{
+        top: 25px;
     }
-    .menu ul{
-	  right: 45%;
+    .message{
+        padding: 5%;
+        border-radius: 10px;
     }
     .message button{
-    	margin-top: 15%;
-    	height: 25%;
+        height: 25%;
+        margin: 10%;
     }
-    .index-main{
-    	top: 70%;
+    .index-main {
+        top: 70%;
     }
-    .index-main .daily-menu{
-    	  width: 50%;
+    .daily-menu .buttons button {
+        width: 8%;
     }
-    .items-right, .items-left{
-    	width: 25%;
-    }
-    .items-right img, .items-left img{
-    	margin-left: 0px;
-    }
-    .items-right{
-    	right: 20%;
-    }
-    .items-left{
-    	left: 20%;
-    }
-    .daily-menu .items p{
-    	left: 15%;
-    }
-    .slider-wrapper{
-        width: 70%;
-        height: 40%;
-        right: 15%;
-    }
-    .swiper-button-next{
-      margin-right: 5%;
-      top: 30% !important;
-    }
-    .swiper-button-prev{
-      margin-left: 5%;
-      top: 30% !important;
-    }
-    .swiper-pagination{
-        top: 115%;
-    }
-    .about-us{
-        top: 200%;
-        height: 40%;
-    }
-    .index-footer{
-        top: 240%;
-    }
+    
+
+    
 
 
 

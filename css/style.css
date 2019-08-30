@@ -1,28 +1,32 @@
-html, body{
-	padding: 0;
-	margin: 0;
+html, body {
+  padding: 0;
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
-  -webkit-user-select: none; 
+  -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
+}
 
+div, span, button, input {
+  outline: none;
 }
-div,span,button,input{
-      outline: none;.
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
-.wrapper{
-	width: 1920px;
-	margin: 0 auto;
-}
-.index-header{
+
+.index-header {
   position: absolute;
   top: 0px;
   width: 100%;
   height: 90%;
 }
-.menu{
+
+.menu {
   position: absolute;
   top: 0;
   margin: 0 auto;
@@ -31,27 +35,29 @@ div,span,button,input{
   z-index: 333;
 }
 
-.menu .buttons{
+.menu .buttons {
   position: absolute;
   right: 0px;
-  top: 70px ;
+  top: 70px;
   width: 81.77083333333333%;
   height: 80%;
 }
-.menu ul{
+
+.menu ul {
   position: absolute;
   right: 47.45833333333333%;
   height: 100%;
   width: 80%;
-
 }
-.menu li{ 
+
+.menu li {
   float: right;
   list-style: none;
   height: 30px;
   margin: 0px 2.66% 0px 0px;
 }
-.menu li a{
+
+.menu li a {
   width: 100%;
   height: 30px;
   font-size: 15px;
@@ -60,32 +66,42 @@ div,span,button,input{
   text-decoration: none;
   padding-bottom: 15px;
 }
-.menu a:hover{
+
+.menu a:hover {
   border-bottom: 3px solid #f1ac11;
   color: #f1ac11;
 }
-.top-block .meat,.vegan,.restaurant{
+
+.top-block .meat, .vegan, .restaurant {
   position: absolute;
+  background-size: 100%;
   width: 33.333333333333333333333%;
-  height: 100%;
+  height: 92%;
 }
-.top-block img{
-  width: 100%;
-  height: 100%;
-}
-.meat{
+.meat {
   opacity: 0.7;
+  background: url(../images/header-images/top-block/1.jpg);
+  background-size: 100%;
 }
-.vegan{
+
+.vegan {
   right: 0;
   opacity: 0.8;
+  background: url(../images/header-images/top-block/2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-.restaurant{
+
+.restaurant {
   left: 33.33%;
-  z-index: 33;
-  opacity: 0.8;   
+
+  opacity: 0.8;
+  background: url(../images/header-images/top-block/3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-.message{
+
+.message {
   padding: 5%;
   width: 58.41121495327103%;
   height: 25%;
@@ -97,7 +113,8 @@ div,span,button,input{
   opacity: 0.9;
   border-radius: 15px 30px 15px 30px;
 }
-.message button{
+
+.message button {
   width: 50%;
   height: 15%;
   margin: 25%;
@@ -105,55 +122,67 @@ div,span,button,input{
   border: none;
   border-radius: 5px 10px;
 }
-.message button a{
+
+.message button a {
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
   text-decoration: none;
-  color: #2B2B2B; 
+  color: #2B2B2B;
 }
+
 /*Hover animation for header div*/
-.top-block div{
+
+.top-block div {
   transition: all 0.5s ease;
 }
- .top-block .message:hover{
+
+.top-block .message:hover {
   opacity: 0.95;
   transform: scale(1.2);
   border: 5px solid #f1ac11;
 }
-.top-block div:hover{
+
+.top-block div:hover {
   transform: scale(0.97);
 }
-.message button:hover{
+
+.message button:hover {
   background-color: #ffb715;
 }
+
 /*main-content*/
-.index-main{
+
+.index-main {
   position: absolute;
   top: 90%;
   width: 100%;
   height: 92.59259259259259%;
 }
-.index-main .daily-menu{
+
+.index-main .daily-menu {
   width: 100%;
   height: 60%;
   margin: 3% auto;
   text-align: center;
 }
+
 /*daily menu div*/
 
-.daily-menu h3{
+.daily-menu h3 {
   margin: auto;
   font-size: 30px;
   color: #f1ac11;
 }
-.daily-menu .buttons{
+
+.daily-menu .buttons {
   width: 100%;
   height: 8%;
   position: absolute;
   top: 15%;
 }
-.daily-menu .buttons button{
+
+.daily-menu .buttons button {
   width: 5%;
   height: 50%;
   border: none;
@@ -162,18 +191,18 @@ div,span,button,input{
   margin: 0px 25px 15px 0px;
   border-radius: 5px;
   color: #000;
+}
 
-}
-.daily-menu .buttons button:hover{
+.daily-menu .buttons button:hover {
   background-color: #F1AC11;
-  
 }
-.daily-menu .buttons .active{
+
+.daily-menu .buttons .active {
   background-color: #F1AC11;
-  
   transform: translateX(0);
 }
-.daily-menu .menu{
+
+.daily-menu .menu {
   width: 80%;
   height: 50%;
   position: relative;
@@ -184,132 +213,137 @@ div,span,button,input{
   grid-gap: 5%;
   justify-content: space-between;
   text-align: left;
-  
 }
-.daily-menu .menu{
+
+.daily-menu .menu {
   display: none;
 }
-.daily-menu .menu.active{
+
+.daily-menu .menu.active {
   display: grid;
+}
 
+.daily-menu .menu .menu-items {
+  width: 100%;
+  ;
+}
 
 }
 
-
-.daily-menu .menu .menu-items{
-   width: 100%;
-   ;}
-
-
-
-   
-   
-
-}
-.daily-menu .menu .menu-items h4{
+.daily-menu .menu .menu-items h4 {
   width: 80%;
   font-size: 15px;
   color: #2B2B2B;
 }
-.daily-menu .menu .menu-items  .price{
-  
+
+.daily-menu .menu .menu-items .price {
   width: 7%;
   height: 15%;
-  position: relative; 
-  
-  
-
+  position: relative;
 }
-.daily-menu .menu .menu-items .text p{;
+
+.daily-menu .menu .menu-items .text p {
+  ;
   margin: 0px;
 }
-.daily-menu .menu .menu-items .price{
+
+.daily-menu .menu .menu-items .price {
   display: flex;
   justify-content: center;
   background-color: #F1AC11;
   border-radius: 15px;
   bottom: 48%;
   left: 90%;
-
 }
-.daily-menu .menu .menu-items .price a{
+
+.daily-menu .menu .menu-items .price a {
   text-decoration: none;
   color: #2B2B2B;
   font-size: 13px;
   border: none;
-  
 }
-
-
 
 /*slider styles*/
 
-.slider-wrapper{
+.slider-wrapper {
   position: relative;
   top: 20%;
   left: 20%;
   width: 60%;
   height: 45%;
 }
-.swiper-container{
+
+.swiper-container {
   height: 100%;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 180px;
   background: #fff;
-/* Center slide text vertically */
+  /* Center slide text vertically */
 }
-.swiper-button-next{
- top: 5%!important;
- margin-right: 10%;
+
+.swiper-button-next {
+  top: 5%!important;
+  margin-right: 10%;
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
   top: 5%!important;
   margin-left: 10%;
 }
-.swiper-pagination{
+
+.swiper-pagination {
   color: #F1AC11;
   position: absolute;
   top: 125%;
   left: 46.5%;
+}
 
-    }
-.slider{
+.slider {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-.slider .slider-logo{
+
+.slider .slider-logo {
   width: 50%;
   height: 100%;
   float: left;
 }
-.slider .slider-logo img{
+
+.slider .slider-logo img {
   width: 100%;
   height: 100%;
 }
-.slider .slider-text{
+
+.slider .slider-text {
   width: 50%;
   height: 100%;
   float: right;
 }
-.slider .slider-text .slider-price,h3,p{
+
+.slider .slider-text .slider-price, h3, p {
   margin-left: 5%;
 }
-.slider .slider-text .small-title{
+
+.slider .slider-text .small-title {
   font-size: 12px;
   color: #f1ac11;
 }
-.slider .slider-text h3{
+
+.slider .slider-text h3 {
   font-size: 17px;
   color: #2b2b2b;
 }
-.slider .slider-text p{
+
+.slider .slider-text p {
   font-size: 15px;
   color: #e3e3e3;
 }
-.slider .slider-text .slider-price{
+
+.slider .slider-text .slider-price {
   width: 15%;
   height: 10%;
   background-color: #f1ac11;
@@ -317,107 +351,120 @@ div,span,button,input{
   text-align: center;
   font-size: 10px;
   border-radius: 15px;
- }
- /*about us*/
-.about-us{
+}
+
+/*about us*/
+
+.about-us {
+  display: flex;
+  justify-content: space-around;
   position: absolute;
   top: 220%;
   width: 100%;
   height: 60%;
-  background-image: url(../images/main-images/about/4031.webp);
+  background-image: url(../images/main-images/about/4031.png);
   background-repeat: no-repeat;
 }
-.about-us .find-us, .contact-us{
-  border: 5px solid #F1AC11;
+
+.about-us .find-us, .contact-us {
+  text-align: center;
   width: 20%;
   height: 50%;
   padding: 40px;
+  margin-top: 3%;
 }
-.thanks{
+
+.thanks {
   border: 5px solid #F1AC11;
   width: 2%;
   height: 50%;
   padding: 40px;
 }
 
-.about-us .find-us{ 
-  margin: 1.5% 10%;
+.about-us .find-us {
+  
   background-color: #ffffff;
   text-align: center;
 }
-.about-us .find-us h4{
+
+.about-us .find-us h4 {
   font-size: 17px;
 }
-.about-us .find-us h5{
+
+.about-us .find-us h5 {
   text-align: center;
   line-height: 30px;
-
 }
-.about-us .find-us p{
+
+.about-us .find-us p {
   position: relative;
   bottom: 15%;
   left: 7%;
   width: 35%;
   text-align: right;
 }
-.about-us .find-us button{
+
+.about-us .find-us button {
   width: 35%;
   height: 15%;
   background-color: #F1AC11;
   border: none;
 }
-.about-us button a{
+
+.about-us button a {
   text-decoration: none;
   color: #2b2b2b;
-
 }
-.about-us .contact-us{
-  position: relative;
-  bottom: 70.5%;
-  margin: auto 65%;
-  text-align: center;
-  background-color: #ffffff;
+
+.about-us .contact-us {
   
+  background-color: #ffffff;
 }
 
-.about-us .contact-us h3, h4{
+.about-us .contact-us h3, h4 {
   font-size: 15px;
   color: #000000;
 }
-.about-us .contact-us h4{
+
+.about-us .contact-us h4 {
   width: 100%;
 }
-.about-us .contact-us form{
+
+.about-us .contact-us form {
   width: 100%;
   height: 100%;
   text-align: center;
 }
-.about-us .contact-us form input{
+
+.about-us .contact-us form input {
   width: 80%;
-  height: 5%; 
+  height: 5%;
   margin: 3%;
   padding: 15px;
   border-radius: 3px;
   border: none;
   background-color: #eceff1;
 }
-.about-us .contact-us form button{
+
+.about-us .contact-us form button {
   width: 50%;
   height: 15%;
   margin-top: 10%;
   background-color: #F1AC11;
   border: none;
 }
-.about-us .contact-us .button{
+
+.about-us .contact-us .button {
   width: 120px;
   height: 25px;
-  background-color: red;
+  background-color: #ffffff;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
 
-.index-footer{
+.index-footer {
   display: none;
   position: absolute;
   top: 257%;
