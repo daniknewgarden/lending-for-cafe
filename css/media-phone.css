@@ -2,99 +2,80 @@
     html {
         height: 100%;
     }
+    *{
+        
+    }
     body {
         padding: 0;
         margin: 0;
         min-width: 100%;
     }
     .index-header {
-        height: 150%;
+        height: 400px;
+    }
+    .menu{
+        height: 20%;
     }
     .menu .buttons {
-        top: 50px;
         width: 100%;
     }
-    .menu ul {
-        width: 90%;
-        right: 10%;
-    }
-    .menu li {
-        margin: 3%;
-    }
-    .top-block .meat, .vegan, .restaurant {
-        width: 100%;
-        height: 50%;
-        left: 0px;
-    }
-    .vegan {
-        top: 50%;
-    }
-    .meat {
-        top: 100%;
-    }
-    .message {
-        padding: 30px;
-        margin: -10% 12%;
-        height: 35%;
-    }
-    .message button {
-        width: 70%;
-        height: 30%;
-        margin: 15%;
-    }
-    .index-main {
-        top: 220%;
-    }
-    .index-main .daily-menu {
-        margin: 20% 0px;
-        height: 130%;
-    }
-    .daily-menu .buttons {
-        width: 98%;
-        height: 15%;
-        margin: 20% 2%;
-    }
-    .daily-menu .buttons button {
-        width: 22%;
-    }
-    .daily-menu .menu {
-        display: none;
-        width: 90%;
+    .block{
         height: 80%;
-        margin: 55% 5%;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(1, 96%);
-        grid-gap: 3%;
+
     }
-    .daily-menu .menu .menu-items .price {
-        width: 10%;
-        border-radius: 10px;
-        bottom: 35%;
-        left: 96%;
+    .phone-inactive{
+        display: none;
     }
-    .slider-wrapper {
+    .message{
+        width: 70%;
+        height: 70%;
+        
+    }
+        .index-main{
+            height: auto;
+        }
+    .index-main .daily-menu{
+        height: auto;
+    }
+    .daily-menu .buttons{
+        flex-wrap: wrap;
+        height: 200px;
+    }
+    .daily-menu .buttons button{
+        width: 20%;
+        height: 40%;
+    }
+    .daily-menu .menu{
+        margin: 15% 0;
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 15%);
+        grid-gap: 1%;
+    }
+    .daily-menu .menu .active{
         width: 100%;
-        top: 90%;
-        left: 0%;
     }
-    .swiper-container {
+    .daily-menu .menu .menu-items{
+        padding: 20px;
+    }
+    .hot-proposition{
+        height: 70%;
+    }
+    .swiper-container{
         width: 100%;
     }
-    .swiper-button-next, .swiper-button-prev {
-        display: none
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
     }
-    .swiper-pagination {
-        color: #F1AC11;
-        position: absolute;
-        top: 280%;
-        left: 40%;
-    }
+    
+
+
     .about-us {
         display: flex;
         align-items: center;
         flex-direction: column;
-        top: 500%;
-        height: 100%;
+        height: 750px;
         background-image: none;
         border: none;
         background-color: rgba(241, 172, 17, 0.86);
@@ -104,12 +85,6 @@
         width: 70%;
         height: 40%;
     }
-     .about-us .find-us{
-         
-     }
-    .about-us .contact-us {
-       
-    }
-    .about-us .find-us button {
-        width: 50%;
+    footer{
+        display: none;
     }

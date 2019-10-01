@@ -37,7 +37,11 @@ div, span, button, input {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin:  auto 0px;
   width: 100%;
@@ -53,20 +57,34 @@ div, span, button, input {
   margin: 0 ;
   height: 90%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
 .menu .buttons ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   height: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .menu .buttons ul li a {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   font-size: 15px;
   color: #000;
@@ -82,21 +100,35 @@ div, span, button, input {
 .block{
   width: 100%;
   height: 87%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   
 }
 .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 20px;
   width: 20%;
   height: 45%;
   background: #fff;
   border-radius: 15px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.21);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.21);
   text-align: center;
 }
@@ -124,6 +156,8 @@ div, span, button, input {
 /*Hover animation for header div*/
 
 .index-header * {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -133,6 +167,8 @@ div, span, button, input {
 }
 
 .block div:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -143,17 +179,32 @@ div, span, button, input {
 /*main-content*/
 
 .index-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   height: 2000px;
 }
 
 .index-main .daily-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 100%;
   height: 70vh;
@@ -164,7 +215,11 @@ div, span, button, input {
 
 .daily-menu h3 {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 10%;
   font-size: 30px;
@@ -172,8 +227,14 @@ div, span, button, input {
 }
 
 .daily-menu .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
  
   width: 100%;
@@ -197,16 +258,23 @@ div, span, button, input {
 
 .daily-menu .buttons .active {
   background-color: #F1AC11;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
 .daily-menu .menu {
   height: 70%;
   width: 80%;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 40% 40%;
   grid-template-rows: 40% 40%;
+  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
 }
@@ -214,21 +282,26 @@ div, span, button, input {
   display: none;
 }
 
-.daily-menu .menu.active {
+.daily-menu .menu .active {
+  display: -ms-grid;
   display: grid;
   width: 70%;
 }
 
 .daily-menu .menu .menu-items {
   padding: 40px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
   grid-gap: 5%;
 }
 
 
 .daily-menu .menu .menu-items h4 {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 8fr 1fr;
   grid-template-columns: 8fr 1fr;
   font-size: 15px;
   color: #2B2B2B;
@@ -245,7 +318,11 @@ div, span, button, input {
 }
 
 .daily-menu .menu .menu-items .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: #F1AC11;
   border-radius: 15px;
@@ -264,15 +341,27 @@ div, span, button, input {
 .hot-proposition{
   width: 100%;
   height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .hot-proposition .elements{
   width: 100%;
   height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   
@@ -287,7 +376,9 @@ div, span, button, input {
   width: 100%;
 }
 .slider{
+  display: -ms-grid!important;
   display: grid!important;
+  -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 100%;
   
@@ -300,14 +391,26 @@ div, span, button, input {
 
 .rounds{
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
   flex: 3;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .swiper-pagination {
   color: #F1AC11;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
  
   
@@ -359,8 +462,13 @@ div, span, button, input {
 /*about us*/
 
 .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 490px;
@@ -373,9 +481,17 @@ div, span, button, input {
   width: 20%;
   height: 50%;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -390,13 +506,22 @@ div, span, button, input {
   text-align: center;
 }
 
-.about-us h4 {
+.about-us .find-us h4 {
   font-size: 17px;
 }
 .about-us .find-us .phone, .adress{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
 }
@@ -424,22 +549,18 @@ div, span, button, input {
   color: #000000;
 }
 
-
+.about-us .contact-us h4 {
+  width: 100%;
+}
 
 .about-us .contact-us form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 65%;
   width: 100%;
   text-align: center;
 }
 
 .about-us .contact-us form input {
-  width: 95%;
-  height: 15px;
-  padding: 15px;
+  width: 80%;
+
   border-radius: 3px;
   border: none;
   background-color: #eceff1;
@@ -447,7 +568,7 @@ div, span, button, input {
 
 .about-us .contact-us form button {
   width: 50%;
-  height: 45px;
+
 
   background-color: #F1AC11;
   border: none;
