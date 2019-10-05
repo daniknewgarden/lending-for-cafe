@@ -1,10 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 750px) {
-    html {
-        height: 100%;
-    }
-    *{
-        
-    }
+@media screen and (min-width: 300px) and (max-width: 499px) {
     body {
         padding: 0;
         margin: 0;
@@ -31,25 +25,27 @@
         height: 70%;
         
     }
-        .index-main{
+    .index-main{
             height: auto;
-        }
+    }
     .index-main .daily-menu{
+        margin: 10% 0;
         height: auto;
+        
     }
     .daily-menu .buttons{
         flex-wrap: wrap;
-        height: 200px;
+        height: 130px;
+        margin: 10% 0;
     }
     .daily-menu .buttons button{
         width: 20%;
         height: 40%;
     }
     .daily-menu .menu{
-        margin: 15% 0;
         height: auto;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(6, 15%);
+        grid-template-rows: repeat(6, 13%);
         grid-gap: 1%;
     }
     .daily-menu .menu .active{
@@ -59,7 +55,7 @@
         padding: 20px;
     }
     .hot-proposition{
-        height: 70%;
+        height: 320px;
     }
     .swiper-container{
         width: 100%;
@@ -75,7 +71,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 750px;
+        height: 700px;
         background-image: none;
         border: none;
         background-color: rgba(241, 172, 17, 0.86);

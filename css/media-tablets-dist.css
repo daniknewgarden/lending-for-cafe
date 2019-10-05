@@ -1,107 +1,69 @@
-@media screen and (min-width: 640px) and (max-width: 1024px){
+@media screen and (min-width: 500px) and (max-width: 1024px){
     .index-header{
-        height: 35%;
+        background-size: 80% 100%;
+        height: 650px;
+    }
+    .menu{
+        height: 15%;
+
     }
     .menu .buttons{
-        top: 25px;
-        width: 100%;
-    }
-    .menu ul{
         width: 90%;
-        right: 26%;
     }
-    .menu li{
-        margin: 0 3%;
-    }
-    .top-block .meat,
-    .vegan,
-    .restaurant{
-        height: 100%;;
-    }
-    .message {
+    .message{
         padding: 10px;
-        margin: -10% 13%;
-        height: 35%;
-        border-radius: 5px;
+        width: 28%;
     }
-    .message button{
-        width: 80%;
-        height: 25%;
-        margin: 5%;
+    .daily-menu .buttons{
+        width: 90%;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
     }
-    .index-main{
-        top: 35%;
-        height: 1024px;
-    }
-    .index-main .daily-menu{
-        margin: 10% 0px;
-    }
-    .daily-menu .buttons button {
-        width: 13%;
+    .daily-menu .buttons button{
+        margin: 0;
+        width: 15%;
     }
     .daily-menu .menu{
-        display: none;
-        width: 80%;
-        height: 50%;
-        margin: 15% 10%;
-        -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-        -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
-        grid-gap: 5%;
-    }
-    .daily-menu .menu .menu-items .price {
-        width: 12%;
-        border-radius: 10px;
-        left: 92%;
-        bottom: 31%;
-    }
-    .slider-wrapper {
-        left: 0px;
-        width: 100%;
-        height: 30%;;
-    }
-    .swiper-slide{
-        width: 80%;
-    }
-    .swiper-container{
-        bottom: 25%;
-        right: 0%;
-    }
-    .slider{
-        width: 80%;
-        
-    }
-    .swiper-button-next, .swiper-button-prev {
-        top: 65%!important;
-    }
-    .swiper-button-next{
-        right: -7% !important;
-    }
-    .swiper-button-prev{
-        left: -10% !important;
-    }
-    .swiper-pagination {
-        position: absolute;
-        top: 117%;
-    }
-    .about-us{
-        top: 180%;
-        height: 40%;
-    }
-    .about-us .find-us,
-    .contact-us {
-        padding: 4% 10%;
-        width: 25.1%;
+        -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
         height: 70%;
     }
-    .about-us .find-us button,
-    .contact-us button{
-        width: 50%;
+    .hot-proposition{
+        height: 20%;
     }
+    .hot-proposition .elements{
+        height: 80%;
+    }
+    .hot-proposition .rounds{
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        height: 20%;
+    }
+    .about-us .find-us,
+    .contact-us{
+        padding: 30px;
+        width: 38%;
+    }
+    .about-us .contact-us form{
+        height: 180px;
+    }
+    .about-us .contact-us form input{
+        -webkit-box-flex: 20%;
+        -ms-flex: 20%;
+        flex: 20%;
+        padding: 5px;
+        height: 30px;
+    }
+    .about-us .contact-us form button{
+        
+    }
+
+}
 
     
 
 
-
-}	
