@@ -7,7 +7,6 @@ html, body {
 }
 
 * {
-  border: 1px solid red;
   margin: 0;
   padding: 0;
   outline: none;
@@ -550,28 +549,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-us .contact-us form input {
   width: 95%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 10px;
   border-radius: 3px;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15%;
   background-color: #eceff1;
 }
 
 .about-us .contact-us form button {
   width: 50%;
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
   background-color: #F1AC11;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45%;
 }
 
-.about-us .contact-us .button {
-  width: 120px;
-  background-color: #ffffff;
-}
+
 
 .hidden {
   display: none;
