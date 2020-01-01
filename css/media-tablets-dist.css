@@ -7,12 +7,18 @@
         height: 15%;
 
     }
-    .menu .buttons{
+.menu .buttons{
         width: 90%;
     }
     .message{
         padding: 10px;
         width: 28%;
+    }
+    .message h3{
+        font-size: 20px;
+    }
+    .message p{
+        font-size: 15px;
     }
     .daily-menu .buttons{
         width: 90%;
@@ -49,14 +55,13 @@
         width: 38%;
     }
     .about-us .contact-us form{
-        height: 180px;
+        height: 80%;
+        width: 90%;
     }
     .about-us .contact-us form input{
-        -webkit-box-flex: 20%;
-        -ms-flex: 20%;
-        flex: 20%;
-        padding: 5px;
-        height: 30px;
+       height: 7%;
+        padding: 15px;
+        
     }
     .about-us .contact-us form button{
         

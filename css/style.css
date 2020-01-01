@@ -10,10 +10,16 @@ html, body {
   margin: 0;
   padding: 0;
   outline: none;
+  
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6, a, button{
+  font-family: 'Source Sans Pro',
+  sans-serif;
+}
+p{
+  font-family: 'Open Sans',
+  sans-serif;
 }
 
 /* div, span, button, input, a {
@@ -67,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu .buttons ul li a {
   flex: 1;
-  font-size: 15px;
+  font-size: 18px;
   color: #000;
   text-align: center;
   font-weight: bolder;
@@ -89,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .message {
   opacity: 0.9;
-  ;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -110,14 +115,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .message h3 {
   margin: 0;
+  font-size: 25px;
 }
 
 .message p {
+  font-size: 16px;
   margin: 0;
+  
 }
 
 .message a {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
@@ -157,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   width: 100%;
   height: 40%;
-  margin: 5% 0 0 0;
+  margin: 2% 0 0 0;
   text-align: center;
 }
 
@@ -166,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   height: 10%;
-  font-size: 30px;
+  font-size: 35px;
   color: #f1ac11;
 }
 
@@ -187,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0px 25px 0px 0px;
   border-radius: 5px;
   color: #000;
+  font-size: 16px;
 }
 
 .daily-menu .buttons button:hover {
@@ -226,24 +235,22 @@ h1, h2, h3, h4, h5, h6 {
 .daily-menu .menu .menu-items h4 {
   display: grid;
   grid-template-columns: 8fr 1fr;
-  font-size: 15px;
+  font-size: 18px;
   color: #2B2B2B;
 }
 
-.daily-menu .menu .menu-items .price {}
 
 .daily-menu .menu .menu-items .text p {
-  ;
-  margin: 0px;
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 .daily-menu .menu .menu-items .price {
   display: flex;
   justify-content: center;
+  align-items: center;  
   background-color: #F1AC11;
   border-radius: 15px;
-  bottom: 48%;
-  left: 90%;
 }
 
 .daily-menu .menu .menu-items .price a {
@@ -373,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-us h4 {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .about-us .find-us .phone, .adress {
@@ -385,10 +392,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-us .find-us h5 {
   margin: 0 15px;
-  line-height: 30px;
+  font-size: 15px;
 }
 
-.about-us .find-us p {}
 
 .about-us a img {
   width: 40px;
@@ -400,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-us .contact-us h3, h4 {
-  font-size: 15px;
+
   color: #000000;
 }
 
@@ -422,6 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   background-color: #eceff1;
   height: 20px;
+  font-size: 13px;
 }
 
 .about-us .contact-us form button {
@@ -429,6 +436,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   background-color: #F1AC11;
   border: none;
+  font-size: 15px;
 }
 
 .hidden {
